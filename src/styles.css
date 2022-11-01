@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+:root {
+  --primary-color: #9f8772;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.app-header {
+  background: var(--primary-color);
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+}
+input[type="number"] {
+  padding: 0.4rem 1rem;
+  margin: 1rem auto;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  display: block;
+  border-color: var(--primary-color);
+}
+.error {
+  color: #dd5353;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.app-logo {
+  font-family: "Megrim", cursive;
+  color: whitesmoke;
+  text-align: start;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  text-transform: initial;
+}
+.nav-link {
+  list-style: none;
+}
+.nav-link a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.container {
+  width: max-content;
+  max-width: 90%;
+  text-align: center;
+  margin: 5rem auto;
+}
+.question-container {
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+.question {
+  margin: 2rem;
+}
+.options-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+.submit-btn {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 1.2rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+.quiz-result {
+  color: #379237;
+}
+.score {
+  font-size: 2rem;
+}
+img {
+  width: 24px;
+}
+.footer-container {
+  text-align: center;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.2rem;
+}
+
+.input-label {
+  color: #3c2317;
+  font-size: 1.5rem;
+}
+
+.hint {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 2rem;
+}
+.hint h2 {
+  margin-bottom: 1rem;
+}
+.answer {
+  font-size: 2rem;
+}
