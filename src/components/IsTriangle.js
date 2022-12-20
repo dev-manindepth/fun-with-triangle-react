@@ -8,11 +8,15 @@ export const IsTriangle = () => {
   const [error, setError] = useState("");
   const checkIsTriangle = () => {
     if (!angle1 || !angle2 || !angle3) {
+      setResult("");
       return setError(
         "Please fill all angles value . Triangles always have three angles"
       );
     }
-
+    if (Number(angle1) > 180 || Number(angle2) > 180 || Number(angle3) > 180) {
+      setResult("");
+      return setError("Invalid Angles");
+    }
     setError("");
     if (Number(angle1) + Number(angle2) + Number(angle3) === 180) {
       setResult("🎉 Yayy!  The given angles form triagles");

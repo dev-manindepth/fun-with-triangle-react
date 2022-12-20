@@ -10,6 +10,10 @@ export const Hypotenuse = () => {
       setResult("");
       return setError("Please fill both sides value");
     }
+    // if (side1 < 0 || side2 < 0) {
+    //   setResult("");
+    //   return setError("Enter enter positive values");
+    // }
     const hypotenuse = Math.sqrt(
       Number(side1) * Number(side1) + Number(side2) * Number(side2)
     ).toFixed(2);

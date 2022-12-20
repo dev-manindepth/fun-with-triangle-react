@@ -35,7 +35,7 @@ export const Quiz = () => {
                 <div className="options-container">
                   {ques.options.map((option) => {
                     return (
-                      <div>
+                      <div key={option}>
                         <input
                           type="radio"
                           name={`${ques.id}`}

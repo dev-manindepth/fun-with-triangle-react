@@ -20,9 +20,11 @@ export const AreaOfTriangle = () => {
     ) {
       setResult("");
       return setError(
-        "Invalid length   Hint: The sum of any two side should always be greater than third side"
+        `Invalid length 
+         Hint: The sum of any two side should always be greater than third side`
       );
     }
+
     //s-> semiperimeter
     const s = (Number(side1) + Number(side2) + Number(side3)) / 2;
     const area = Math.sqrt(
